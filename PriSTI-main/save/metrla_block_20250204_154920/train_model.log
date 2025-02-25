@@ -1,0 +1,6 @@
+147: avg_epoch_loss=0.161
+199: avg_epoch_loss=0.154
+199: valid_avg_epoch_loss=0.142
+RMSE: 3.245604343846083
+MAE: 1.7784388463929839
+CRPS: 0.023485051958184493
