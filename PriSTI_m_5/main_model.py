@@ -106,7 +106,7 @@ class PriSTI(nn.Module):
         
         
         
-        # ########## pms25 ############
+        # ########## pms25 old ############
         # target_mask = observed_mask - cond_mask
         # target_mask[:,[0,  1, 22, 23, 24, 26, 27, 28, 29, 30, 31,25, 32, 33, 34, 35],:] = 0
         # residual = (noise - predicted) * target_mask
@@ -128,55 +128,170 @@ class PriSTI(nn.Module):
         # loss = (loss1 + loss2 + loss3)/3
         # ###############################
         
+        # ########## pms25 ############
+        # target_mask = observed_mask - cond_mask
+        # mm = torch.zeros_like(target_mask).to(self.device)
+        # mm[:,[2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]] = 1.
+        # target_mask = target_mask * mm
+        # # target_mask[:,[0,  1, 22, 23, 24, 26, 27, 28, 29, 31, 25, 30, 32, 33, 34, 35],:] = 0
+        # residual = (noise - predicted) * target_mask
+        # num_eval = target_mask.sum()
+        # loss1 = (residual ** 2).sum() / (num_eval if num_eval > 0 else 1)
+        
+        # target_mask = observed_mask - cond_mask
+        # mm = torch.zeros_like(target_mask).to(self.device)
+        # mm[:,[0,  1, 22, 23, 24, 26, 27, 28, 29, 31]] = 1.
+        # target_mask = target_mask * mm
+        # # target_mask[:,[2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18,
+        # #        19, 20, 21, 25, 30, 32, 33, 34, 35],:] = 0
+        # residual = (noise - predicted) * target_mask
+        # num_eval = target_mask.sum()
+        # loss2 = (residual ** 2).sum() / (num_eval if num_eval > 0 else 1)
+        
+        # target_mask = observed_mask - cond_mask
+        # mm = torch.zeros_like(target_mask).to(self.device)
+        # mm[:,[25, 30, 32, 33, 34, 35]] = 1.
+        # target_mask = target_mask * mm
+        # # target_mask[:,[2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18,
+        #        # 19, 20, 21, 0,  1, 22, 23, 24, 26, 27, 28, 29, 31],:] = 0
+        # residual = (noise - predicted) * target_mask
+        # num_eval = target_mask.sum()
+        # loss3 = (residual ** 2).sum() / (num_eval if num_eval > 0 else 1)
+        
+        # loss = (loss1 + loss2 + loss3)/3
+        # ###############################
+        
+        
         
         ########## metrla ############
         target_mask = observed_mask - cond_mask
-        target_mask[:,[206,  91, 174,  87,  38, 170,  41, 165, 139, 163,  47,  48,  82,
+        mm = torch.zeros_like(target_mask).to(self.device)
+        mm[:,[206,  91, 174,  87,  38, 170,  41, 165, 139, 163,  47,  48,  82,
                 81, 160,  52, 159,  56, 141, 155,  60,  76,  63, 150,  73, 148,
                133,  95, 144, 191,  12, 127,  96,  15, 120, 193, 187, 100, 125,
-                 4,  25, 204,  23],:] = 0
+                 4,  25, 204,  23]] = 1.
+        target_mask = target_mask * mm
+        # target_mask[:,[206,  91, 174,  87,  38, 170,  41, 165, 139, 163,  47,  48,  82,
+        #         81, 160,  52, 159,  56, 141, 155,  60,  76,  63, 150,  73, 148,
+        #        133,  95, 144, 191,  12, 127,  96,  15, 120, 193, 187, 100, 125,
+        #          4,  25, 204,  23],:] = 0
         residual = (noise - predicted) * target_mask
         num_eval = target_mask.sum()
         loss1 = (residual ** 2).sum() / (num_eval if num_eval > 0 else 1)
-        
+       
         target_mask = observed_mask - cond_mask
-        target_mask[:,[75, 113, 111, 142,  74, 124, 140,  80, 119,
-      115, 112,  94, 104, 205, 130, 138, 137, 101,  86, 131, 136,  72,
-      134,  97,  93, 128,  89, 157,  69, 145,  26,  24, 186, 188,  19,
-      190,  17, 181,  16, 195, 196, 197, 198,   6,   5,   3, 199, 192,
-      180, 182,  33, 146, 149, 154,  61, 116,  57, 158,  54, 162, 161,
-       43,  42, 166, 172, 175,  34, 164, 117],:] = 0
+        mm = torch.zeros_like(target_mask).to(self.device)
+        mm[:,[75, 113, 111, 142,  74, 124, 140,  80, 119,
+       115, 112,  94, 104, 205, 130, 138, 137, 101,  86, 131, 136,  72,
+       134,  97,  93, 128,  89, 157,  69, 145,  26,  24, 186, 188,  19,
+       190,  17, 181,  16, 195, 196, 197, 198,   6,   5,   3, 199, 192,
+       180, 182,  33, 146, 149, 154,  61, 116,  57, 158,  54, 162, 161,
+        43,  42, 166, 172, 175,  34, 164, 117]] = 1.
+        target_mask = target_mask * mm
+       #  target_mask[:,[75, 113, 111, 142,  74, 124, 140,  80, 119,
+       # 115, 112,  94, 104, 205, 130, 138, 137, 101,  86, 131, 136,  72,
+       # 134,  97,  93, 128,  89, 157,  69, 145,  26,  24, 186, 188,  19,
+       # 190,  17, 181,  16, 195, 196, 197, 198,   6,   5,   3, 199, 192,
+       # 180, 182,  33, 146, 149, 154,  61, 116,  57, 158,  54, 162, 161,
+       #  43,  42, 166, 172, 175,  34, 164, 117],:] = 0
         residual = (noise - predicted) * target_mask
         num_eval = target_mask.sum()
         loss2 = (residual ** 2).sum() / (num_eval if num_eval > 0 else 1)
         
         target_mask = observed_mask - cond_mask
-        target_mask[:,[176, 122, 132, 185, 151,
-       183, 103,  64,  84,   9,  88,   8,  14,  78,  98,  77, 102,   2,
-        28,  59,  40,  70,  29,  68,  83,  79],:] = 0
+        mm = torch.zeros_like(target_mask).to(self.device)
+        mm[:,[176, 122, 132, 185, 151,
+        183, 103,  64,  84,   9,  88,   8,  14,  78,  98,  77, 102,   2,
+         28,  59,  40,  70,  29,  68,  83,  79]] = 1.
+        target_mask = target_mask * mm
+        # target_mask[:,[176, 122, 132, 185, 151,
+        # 183, 103,  64,  84,   9,  88,   8,  14,  78,  98,  77, 102,   2,
+         # 28,  59,  40,  70,  29,  68,  83,  79],:] = 0
         residual = (noise - predicted) * target_mask
         num_eval = target_mask.sum()
         loss3 = (residual ** 2).sum() / (num_eval if num_eval > 0 else 1)
         
         target_mask = observed_mask - cond_mask
-        target_mask[:,[189, 153, 152, 114,  50,
-        45,  44, 167,  31, 179, 178,  21, 156,  35, 105,  10,  90, 121,
-        203,  99,  18, 106, 126, 200],:] = 0
+        mm = torch.zeros_like(target_mask).to(self.device)
+        mm[:,[189, 153, 152, 114,  50,
+         45,  44, 167,  31, 179, 178,  21, 156,  35, 105,  10,  90, 121,
+         203,  99,  18, 106, 126, 200]] = 1.
+        target_mask = target_mask * mm
+        # target_mask[:,[189, 153, 152, 114,  50,
+        #  45,  44, 167,  31, 179, 178,  21, 156,  35, 105,  10,  90, 121,
+        #  203,  99,  18, 106, 126, 200],:] = 0
         residual = (noise - predicted) * target_mask
         num_eval = target_mask.sum()
         loss4 = (residual ** 2).sum() / (num_eval if num_eval > 0 else 1)
-        
+    
         target_mask = observed_mask - cond_mask
-        target_mask[:,[177,   1,  30, 202, 201,  13,  27,
-         22,   7,  20, 194,  32, 184,  11,  49, 173, 110, 109, 123, 108,
-        107, 129,  92, 135,  85, 143,  71, 147,  67,  66,  65,  62,  58,
-         55,  53,  51, 118,  46, 168, 169,  39, 171,  37,  36,   0],:] = 0
+        mm = torch.zeros_like(target_mask).to(self.device)
+        mm[:,[177,   1,  30, 202, 201,  13,  27,
+          22,   7,  20, 194,  32, 184,  11,  49, 173, 110, 109, 123, 108,
+         107, 129,  92, 135,  85, 143,  71, 147,  67,  66,  65,  62,  58,
+          55,  53,  51, 118,  46, 168, 169,  39, 171,  37,  36,   0]] = 1.
+        target_mask = target_mask * mm
+        # target_mask[:,[177,   1,  30, 202, 201,  13,  27,
+        #   22,   7,  20, 194,  32, 184,  11,  49, 173, 110, 109, 123, 108,
+        #  107, 129,  92, 135,  85, 143,  71, 147,  67,  66,  65,  62,  58,
+        #   55,  53,  51, 118,  46, 168, 169,  39, 171,  37,  36,   0],:] = 0
         residual = (noise - predicted) * target_mask
         num_eval = target_mask.sum()
         loss5 = (residual ** 2).sum() / (num_eval if num_eval > 0 else 1)
-        
+    
         loss = (loss1 + loss2 + loss3 + loss4 + loss5)/5
-        ##############################
+       #  #############################
+        
+        
+       #  ########## metrla old ############
+       #  target_mask = observed_mask - cond_mask
+       #  target_mask[:,[206,  91, 174,  87,  38, 170,  41, 165, 139, 163,  47,  48,  82,
+       #          81, 160,  52, 159,  56, 141, 155,  60,  76,  63, 150,  73, 148,
+       #         133,  95, 144, 191,  12, 127,  96,  15, 120, 193, 187, 100, 125,
+       #           4,  25, 204,  23],:] = 0
+       #  residual = (noise - predicted) * target_mask
+       #  num_eval = target_mask.sum()
+       #  loss1 = (residual ** 2).sum() / (num_eval if num_eval > 0 else 1)
+       
+       #  target_mask = observed_mask - cond_mask
+       #  target_mask[:,[75, 113, 111, 142,  74, 124, 140,  80, 119,
+       # 115, 112,  94, 104, 205, 130, 138, 137, 101,  86, 131, 136,  72,
+       # 134,  97,  93, 128,  89, 157,  69, 145,  26,  24, 186, 188,  19,
+       # 190,  17, 181,  16, 195, 196, 197, 198,   6,   5,   3, 199, 192,
+       # 180, 182,  33, 146, 149, 154,  61, 116,  57, 158,  54, 162, 161,
+       #  43,  42, 166, 172, 175,  34, 164, 117],:] = 0
+       #  residual = (noise - predicted) * target_mask
+       #  num_eval = target_mask.sum()
+       #  loss2 = (residual ** 2).sum() / (num_eval if num_eval > 0 else 1)
+        
+       #  target_mask = observed_mask - cond_mask
+       #  target_mask[:,[176, 122, 132, 185, 151,
+       #  183, 103,  64,  84,   9,  88,   8,  14,  78,  98,  77, 102,   2,
+       #   28,  59,  40,  70,  29,  68,  83,  79],:] = 0
+       #  residual = (noise - predicted) * target_mask
+       #  num_eval = target_mask.sum()
+       #  loss3 = (residual ** 2).sum() / (num_eval if num_eval > 0 else 1)
+        
+       #  target_mask = observed_mask - cond_mask
+       #  target_mask[:,[189, 153, 152, 114,  50,
+       #   45,  44, 167,  31, 179, 178,  21, 156,  35, 105,  10,  90, 121,
+       #   203,  99,  18, 106, 126, 200],:] = 0
+       #  residual = (noise - predicted) * target_mask
+       #  num_eval = target_mask.sum()
+       #  loss4 = (residual ** 2).sum() / (num_eval if num_eval > 0 else 1)
+    
+       #  target_mask = observed_mask - cond_mask
+       #  target_mask[:,[177,   1,  30, 202, 201,  13,  27,
+       #    22,   7,  20, 194,  32, 184,  11,  49, 173, 110, 109, 123, 108,
+       #   107, 129,  92, 135,  85, 143,  71, 147,  67,  66,  65,  62,  58,
+       #    55,  53,  51, 118,  46, 168, 169,  39, 171,  37,  36,   0],:] = 0
+       #  residual = (noise - predicted) * target_mask
+       #  num_eval = target_mask.sum()
+       #  loss5 = (residual ** 2).sum() / (num_eval if num_eval > 0 else 1)
+    
+       #  loss = (loss1 + loss2 + loss3 + loss4 + loss5)/5
+        #############################
+        
         return loss
 
     def set_input_to_diffmodel(self, noisy_data, observed_data, cond_mask):

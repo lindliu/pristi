@@ -9,7 +9,7 @@ train:
   is_lr_decay: true
 
 diffusion:
-  layers: 2  # 4 for pms25
+  layers: 2 #2 for metrla  # 4 for pms25
   channels: 64    #
   nheads: 8
   diffusion_embedding_dim: 128
