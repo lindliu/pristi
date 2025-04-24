@@ -1,0 +1,76 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Apr 23 13:09:41 2025
+
+@author: dliu
+"""
+
+import pickle
+from torch.utils.data import DataLoader, Dataset
+import pandas as pd
+import numpy as np
+import torch
+import torchcde
+from utils import get_randmask, get_hist_mask
+from main_model import PriSTI_aqi36
+import yaml
+from utils import train, evaluate
+import datetime
+from dataset_aqi36 import AQI36_Dataset
+
+import matplotlib.pyplot as plt
+
+device = 'cuda'
+
+df = pd.read_csv(
+    "./data/pm25/SampleData/pm25_ground.txt",
+    index_col="datetime",
+    parse_dates=True,
+)
+df_gt = pd.read_csv(
+    "./data/pm25/SampleData/pm25_missing.txt",
+    index_col="datetime",
+    parse_dates=True,
+)
+
+
+path = "config/base.yaml"
+with open(path, "r") as f:
+    config = yaml.safe_load(f)
+
+config["model"]["is_unconditional"] = True
+config["model"]["target_strategy"] = 'hybrid'
+config["diffusion"]["adj_file"] = 'AQI36'
+config["seed"] = 1
+
+
+dataset = AQI36_Dataset(mode="test", is_interpolate=True, target_strategy=config["model"]["target_strategy"], mask_sensor=config["model"]["mask_sensor"])
+test_loader = DataLoader(
+    dataset, batch_size=1, num_workers=16, shuffle=False
+)
+
+scaler = torch.from_numpy(dataset.train_std).to(device).float()
+mean_scaler = torch.from_numpy(dataset.train_mean).to(device).float()
+
+    
+model = PriSTI_aqi36(config, device, 'pm25').to(device)
+
+
+
+modelfolder = 'pm25_outsample_20250423_163458_verify_July'
+foldername = (
+    "./save/" + f'{modelfolder}/'
+)
+model.load_state_dict(torch.load("./save/" + modelfolder + "/model.pth", map_location='cuda'))
+
+
+evaluate(
+    model,
+    test_loader,
+    nsample=10,
+    scaler=scaler,
+    mean_scaler=mean_scaler,
+    foldername=foldername,
+)
+

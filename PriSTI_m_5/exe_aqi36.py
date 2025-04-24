@@ -67,9 +67,9 @@ if __name__ == '__main__':
         is_interpolate=config["model"]["use_guide"], num_workers=args.num_workers,
         target_strategy=args.targetstrategy, mask_sensor=config["model"]["mask_sensor"]
     )
-    model = PriSTI_aqi36(config, args.device).to(args.device)
+    model = PriSTI_aqi36(config, args.device, 'pm25').to(args.device)
     
-    # args.modelfolder = 'pm25_outsample_20241212_151429'
+    # args.modelfolder = 'pm25_outsample_20250317_164137_new'
     if args.modelfolder == "":
         train(
             model,

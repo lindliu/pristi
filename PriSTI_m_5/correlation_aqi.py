@@ -203,7 +203,7 @@ ax[0].imshow(correlation)
 ax[1].imshow(correlation_reindex)
 ax[1].set_xticks(np.arange(36)) 
 ax[1].set_xticklabels(np.argsort(ind))
-
+# fig.savefig('co.png')
 
 
 # ind[ind==4]=2

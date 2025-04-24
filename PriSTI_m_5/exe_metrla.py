@@ -44,7 +44,7 @@ def main(args):
         is_interpolate=config["model"]["use_guide"], num_workers=args.num_workers,
         target_strategy=args.targetstrategy,
     )
-    model = PriSTI_MetrLA(config, args.device).to(args.device)
+    model = PriSTI_MetrLA(config, args.device, 'metrla').to(args.device)
 
     if args.modelfolder == "":
         train(
