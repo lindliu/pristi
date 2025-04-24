@@ -29,8 +29,8 @@ class AQI36_Dataset(Dataset):
         elif mode == "valid":
             month_list = [2, 5, 8, 11]
         elif mode == "test":
-            # month_list = [3, 6, 9, 12]
-            month_list = [5]
+            month_list = [3, 6, 9, 12]
+            # month_list = [5]
         self.month_list = month_list
 
         # create data for batch
