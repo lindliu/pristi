@@ -44,7 +44,7 @@ def main(args):
         config["train"]["batch_size"], device=args.device, missing_pattern=args.missing_pattern,
         is_interpolate=config["model"]["use_guide"], num_workers=args.num_workers, target_strategy=args.targetstrategy
     )
-    model = PriSTI_PemsBAY(config, args.device).to(args.device)
+    model = PriSTI_PemsBAY(config, args.device, 'pemsbay').to(args.device)
 
     if args.modelfolder == "":
         train(

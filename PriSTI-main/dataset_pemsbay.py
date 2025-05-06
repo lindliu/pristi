@@ -40,7 +40,7 @@ class PemsBAY_Dataset(Dataset):
         self.is_interpolate = is_interpolate
         self.target_strategy = target_strategy
         self.mode = mode
-        path = "./data/pems_bay/pems_meanstd.pk"
+        path = "../../data/pems_bay/pems_meanstd.pk"
         with open(path, "rb") as f:
             self.train_mean, self.train_std = pickle.load(f)
 
@@ -48,7 +48,7 @@ class PemsBAY_Dataset(Dataset):
         self.use_index = []
         self.cut_length = []
 
-        df = pd.read_hdf("./data/pems_bay/pems_bay.h5")
+        df = pd.read_hdf("../../data/pems_bay/pems_bay.h5")
         ob_mask = (df.values != 0.).astype('uint8')
         SEED = 9101112
         self.rng = np.random.default_rng(SEED)
