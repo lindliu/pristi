@@ -1,0 +1,86 @@
+MetrLA
+
+100%|██████████| 5992/5992 [21:02<00:00,  4.75it/s, avg_epoch_loss=0.152, epoch=192]
+
+100%|██████████| 5992/5992 [21:43<00:00,  4.60it/s, avg_epoch_loss=0.155, epoch=193]
+
+100%|██████████| 5992/5992 [20:57<00:00,  4.77it/s, avg_epoch_loss=0.158, epoch=194]
+
+100%|██████████| 5992/5992 [21:17<00:00,  4.69it/s, avg_epoch_loss=0.156, epoch=195]
+
+100%|██████████| 5992/5992 [21:07<00:00,  4.73it/s, avg_epoch_loss=0.153, epoch=196]
+
+100%|██████████| 5992/5992 [21:53<00:00,  4.56it/s, avg_epoch_loss=0.156, epoch=197]
+
+100%|██████████| 5992/5992 [21:32<00:00,  4.64it/s, avg_epoch_loss=0.155, epoch=198]
+
+100%|██████████| 5992/5992 [21:26<00:00,  4.66it/s, avg_epoch_loss=0.156, epoch=199]
+
+100%|██████████| 851/851 [49:20<00:00,  3.48s/it, valid_avg_epoch_loss=0.141, epoch=199]
+
+100%|██████████| 72/72 [6:50:05<00:00, 341.74s/it, rmse_total=3.19, mae_total=1.75, batch_no=72]
+
+ 
+
+INFO:root:mae_total=1.7276612591372438
+
+INFO:root:batch_no=63
+
+INFO:root:rmse_total=3.1201462817441885
+
+INFO:root:mae_total=1.7242401157145748
+
+INFO:root:batch_no=64
+
+INFO:root:rmse_total=3.1202114367379505
+
+INFO:root:mae_total=1.7222695534396995
+
+INFO:root:batch_no=65
+
+INFO:root:rmse_total=3.1164105725069913
+
+INFO:root:mae_total=1.7251699196886625
+
+INFO:root:batch_no=66
+
+INFO:root:rmse_total=3.1149462743363463
+
+INFO:root:mae_total=1.7254138755698665
+
+INFO:root:batch_no=67
+
+INFO:root:rmse_total=3.167927959051347
+
+INFO:root:mae_total=1.7392171671331165
+
+INFO:root:batch_no=68
+
+INFO:root:rmse_total=3.1682404149296914
+
+INFO:root:mae_total=1.7408087668970744
+
+INFO:root:batch_no=69
+
+INFO:root:rmse_total=3.1644632820628025
+
+INFO:root:mae_total=1.740794634699962
+
+INFO:root:batch_no=70
+
+INFO:root:rmse_total=3.1919758482944225
+
+INFO:root:mae_total=1.7519118596571979
+
+INFO:root:batch_no=71
+
+INFO:root:rmse_total=3.1895317658514237
+
+INFO:root:mae_total=1.7508924402399542
+
+INFO:root:batch_no=72
+
+INFO:root:RMSE=3.1895317658514237
+INFO:root:MAE=1.7508924402399542
+INFO:root:CRPS=0.02310515704907869
+INFO:root:std=0.008787762373685837

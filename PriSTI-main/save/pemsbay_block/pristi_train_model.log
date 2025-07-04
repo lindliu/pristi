@@ -1,0 +1,541 @@
+INFO:root:avg_epoch_loss:0.19207291525052436, epoch:0
+INFO:root:avg_epoch_loss:0.16915351942110576, epoch:1
+INFO:root:avg_epoch_loss:0.16239030579959712, epoch:2
+INFO:root:avg_epoch_loss:0.1618735453804359, epoch:3
+INFO:root:avg_epoch_loss:0.16060405372048345, epoch:4
+INFO:root:avg_epoch_loss:0.15832348784599892, epoch:5
+INFO:root:avg_epoch_loss:0.15573254122727798, epoch:6
+INFO:root:avg_epoch_loss:0.1560829035458076, epoch:7
+INFO:root:avg_epoch_loss:0.1555765700782994, epoch:8
+INFO:root:avg_epoch_loss:0.15441316710859107, epoch:9
+INFO:root:avg_epoch_loss:0.15380494473844325, epoch:10
+INFO:root:avg_epoch_loss:0.15588684390517166, epoch:11
+INFO:root:avg_epoch_loss:0.15407071259846983, epoch:12
+INFO:root:avg_epoch_loss:0.15633043877620023, epoch:13
+INFO:root:avg_epoch_loss:0.15487787537263972, epoch:14
+INFO:root:avg_epoch_loss:0.1561352538518624, epoch:15
+INFO:root:avg_epoch_loss:0.15403261624799772, epoch:16
+INFO:root:avg_epoch_loss:0.1539477434358751, epoch:17
+INFO:root:avg_epoch_loss:0.15528741796489232, epoch:18
+INFO:root:avg_epoch_loss:0.15432539579647048, epoch:19
+INFO:root:avg_epoch_loss:0.15486349680563674, epoch:20
+INFO:root:avg_epoch_loss:0.15203673153851555, epoch:21
+INFO:root:avg_epoch_loss:0.15297858467212155, epoch:22
+INFO:root:avg_epoch_loss:0.1528451845745668, epoch:23
+INFO:root:avg_epoch_loss:0.15332630097230532, epoch:24
+INFO:root:avg_epoch_loss:0.15201500839510604, epoch:25
+INFO:root:avg_epoch_loss:0.15316198620540603, epoch:26
+INFO:root:avg_epoch_loss:0.15287664688899358, epoch:27
+INFO:root:avg_epoch_loss:0.15129048564994693, epoch:28
+INFO:root:avg_epoch_loss:0.15404772694090824, epoch:29
+INFO:root:avg_epoch_loss:0.1501719183860182, epoch:30
+INFO:root:avg_epoch_loss:0.1505520892076504, epoch:31
+INFO:root:avg_epoch_loss:0.15351093307666755, epoch:32
+INFO:root:avg_epoch_loss:0.15118212773466153, epoch:33
+INFO:root:avg_epoch_loss:0.1516607859361461, epoch:34
+INFO:root:avg_epoch_loss:0.1511346034359522, epoch:35
+INFO:root:avg_epoch_loss:0.15407687364303463, epoch:36
+INFO:root:avg_epoch_loss:0.1525453870806708, epoch:37
+INFO:root:avg_epoch_loss:0.1504934290633192, epoch:38
+INFO:root:avg_epoch_loss:0.15307090200815357, epoch:39
+INFO:root:avg_epoch_loss:0.15354869896298232, epoch:40
+INFO:root:avg_epoch_loss:0.15206420286183076, epoch:41
+INFO:root:avg_epoch_loss:0.15283899421104266, epoch:42
+INFO:root:avg_epoch_loss:0.1495609907333515, epoch:43
+INFO:root:avg_epoch_loss:0.15224055369985884, epoch:44
+INFO:root:avg_epoch_loss:0.14991812116287145, epoch:45
+INFO:root:avg_epoch_loss:0.15162654066470094, epoch:46
+INFO:root:avg_epoch_loss:0.14990911029495843, epoch:47
+INFO:root:avg_epoch_loss:0.15177016737352336, epoch:48
+INFO:root:avg_epoch_loss:0.151410576611838, epoch:49
+INFO:root:avg_epoch_loss:0.1518554158258194, epoch:50
+INFO:root:avg_epoch_loss:0.15141043419251346, epoch:51
+INFO:root:avg_epoch_loss:0.15298928702697137, epoch:52
+INFO:root:avg_epoch_loss:0.15014936720093613, epoch:53
+INFO:root:avg_epoch_loss:0.1500343700811738, epoch:54
+INFO:root:avg_epoch_loss:0.15139747760003178, epoch:55
+INFO:root:avg_epoch_loss:0.15310872715021198, epoch:56
+INFO:root:avg_epoch_loss:0.15114454358205143, epoch:57
+INFO:root:avg_epoch_loss:0.15189061773199133, epoch:58
+INFO:root:avg_epoch_loss:0.1503853129627601, epoch:59
+INFO:root:avg_epoch_loss:0.15257870839713056, epoch:60
+INFO:root:avg_epoch_loss:0.15329942443439745, epoch:61
+INFO:root:avg_epoch_loss:0.15000509416114374, epoch:62
+INFO:root:avg_epoch_loss:0.15074358008384553, epoch:63
+INFO:root:avg_epoch_loss:0.15115567791539802, epoch:64
+INFO:root:avg_epoch_loss:0.15283174944379446, epoch:65
+INFO:root:avg_epoch_loss:0.14840876386701157, epoch:66
+INFO:root:avg_epoch_loss:0.15110027763030318, epoch:67
+INFO:root:avg_epoch_loss:0.15262326930687384, epoch:68
+INFO:root:avg_epoch_loss:0.15027211538704496, epoch:69
+INFO:root:avg_epoch_loss:0.15065227076484047, epoch:70
+INFO:root:avg_epoch_loss:0.14973434487130907, epoch:71
+INFO:root:avg_epoch_loss:0.1517379833843985, epoch:72
+INFO:root:avg_epoch_loss:0.1509415737530283, epoch:73
+INFO:root:avg_epoch_loss:0.15186643247378687, epoch:74
+INFO:root:avg_epoch_loss:0.15018301404694845, epoch:75
+INFO:root:avg_epoch_loss:0.15167109448259908, epoch:76
+INFO:root:avg_epoch_loss:0.15101544855865465, epoch:77
+INFO:root:avg_epoch_loss:0.14866929548824215, epoch:78
+INFO:root:avg_epoch_loss:0.1508328113985645, epoch:79
+INFO:root:avg_epoch_loss:0.15090165441578385, epoch:80
+INFO:root:avg_epoch_loss:0.15007314287875517, epoch:81
+INFO:root:avg_epoch_loss:0.14892608704034177, epoch:82
+INFO:root:avg_epoch_loss:0.15132376492027044, epoch:83
+INFO:root:avg_epoch_loss:0.15219527781231904, epoch:84
+INFO:root:avg_epoch_loss:0.15073253063122816, epoch:85
+INFO:root:avg_epoch_loss:0.14854918497643171, epoch:86
+INFO:root:avg_epoch_loss:0.15035161072974773, epoch:87
+INFO:root:avg_epoch_loss:0.1514196835411789, epoch:88
+INFO:root:avg_epoch_loss:0.14977120159083268, epoch:89
+INFO:root:avg_epoch_loss:0.14918096702882036, epoch:90
+INFO:root:avg_epoch_loss:0.15066002864194947, epoch:91
+INFO:root:avg_epoch_loss:0.14818699053959697, epoch:92
+INFO:root:avg_epoch_loss:0.15019310860934468, epoch:93
+INFO:root:avg_epoch_loss:0.1493230426774702, epoch:94
+INFO:root:avg_epoch_loss:0.1474247609969388, epoch:95
+INFO:root:avg_epoch_loss:0.15193912052376746, epoch:96
+INFO:root:avg_epoch_loss:0.15077075880919738, epoch:97
+INFO:root:avg_epoch_loss:0.1493673087652002, epoch:98
+INFO:root:avg_epoch_loss:0.1498544683060504, epoch:99
+INFO:root:avg_epoch_loss:0.14964783801956463, epoch:100
+INFO:root:avg_epoch_loss:0.1475514789630449, epoch:101
+INFO:root:avg_epoch_loss:0.1505765828312933, epoch:102
+INFO:root:avg_epoch_loss:0.14949307943402074, epoch:103
+INFO:root:avg_epoch_loss:0.1511872534683813, epoch:104
+INFO:root:avg_epoch_loss:0.14986358441206055, epoch:105
+INFO:root:avg_epoch_loss:0.14977304812002717, epoch:106
+INFO:root:avg_epoch_loss:0.1513671852611986, epoch:107
+INFO:root:avg_epoch_loss:0.14903223767725407, epoch:108
+INFO:root:avg_epoch_loss:0.1494613425811018, epoch:109
+INFO:root:avg_epoch_loss:0.14975580962094337, epoch:110
+INFO:root:avg_epoch_loss:0.15042503832174528, epoch:111
+INFO:root:avg_epoch_loss:0.14889022277842326, epoch:112
+INFO:root:avg_epoch_loss:0.14972644052570416, epoch:113
+INFO:root:avg_epoch_loss:0.14970056344726895, epoch:114
+INFO:root:avg_epoch_loss:0.14856572553604327, epoch:115
+INFO:root:avg_epoch_loss:0.149614325379728, epoch:116
+INFO:root:avg_epoch_loss:0.15021425251643625, epoch:117
+INFO:root:avg_epoch_loss:0.1475163755857948, epoch:118
+INFO:root:avg_epoch_loss:0.15044434696386885, epoch:119
+INFO:root:valid_avg_epoch_loss0.1448876628093565, epoch:119
+INFO:root:best loss is updated to 0.1448876628093565 at 119
+INFO:root:avg_epoch_loss:0.15153608348205772, epoch:120
+INFO:root:avg_epoch_loss:0.1505306297044453, epoch:121
+INFO:root:avg_epoch_loss:0.15284526690562805, epoch:122
+INFO:root:avg_epoch_loss:0.1514571667264675, epoch:123
+INFO:root:avg_epoch_loss:0.152350060368908, epoch:124
+INFO:root:avg_epoch_loss:0.1526254504901938, epoch:125
+INFO:root:avg_epoch_loss:0.1488913250957563, epoch:126
+INFO:root:avg_epoch_loss:0.1509325904773729, epoch:127
+INFO:root:avg_epoch_loss:0.14844523666950696, epoch:128
+INFO:root:avg_epoch_loss:0.14923522988103383, epoch:129
+INFO:root:avg_epoch_loss:0.15266958612537915, epoch:130
+INFO:root:avg_epoch_loss:0.14856738488798327, epoch:131
+INFO:root:avg_epoch_loss:0.1498391257188509, epoch:132
+INFO:root:avg_epoch_loss:0.1496748465793059, epoch:133
+INFO:root:avg_epoch_loss:0.15080646078615206, epoch:134
+INFO:root:avg_epoch_loss:0.14919150307627924, epoch:135
+INFO:root:avg_epoch_loss:0.1514276605105187, epoch:136
+INFO:root:avg_epoch_loss:0.14963003858488136, epoch:137
+INFO:root:avg_epoch_loss:0.151901715245809, epoch:138
+INFO:root:avg_epoch_loss:0.15189946781725377, epoch:139
+INFO:root:valid_avg_epoch_loss0.1448517450193947, epoch:139
+INFO:root:best loss is updated to 0.1448517450193947 at 139
+INFO:root:avg_epoch_loss:0.14763850427744324, epoch:140
+INFO:root:avg_epoch_loss:0.14996577540166814, epoch:141
+INFO:root:avg_epoch_loss:0.15112089209296362, epoch:142
+INFO:root:avg_epoch_loss:0.14984864135800532, epoch:143
+INFO:root:avg_epoch_loss:0.14992979802926915, epoch:144
+INFO:root:avg_epoch_loss:0.15016222797120649, epoch:145
+INFO:root:avg_epoch_loss:0.15011412143053102, epoch:146
+INFO:root:avg_epoch_loss:0.14730746169103023, epoch:147
+INFO:root:avg_epoch_loss:0.14925313312966465, epoch:148
+INFO:root:avg_epoch_loss:0.14810423974713563, epoch:149
+INFO:root:avg_epoch_loss:0.14683909467909356, epoch:150
+INFO:root:avg_epoch_loss:0.1440830893639845, epoch:151
+INFO:root:avg_epoch_loss:0.1450867046900676, epoch:152
+INFO:root:avg_epoch_loss:0.14651752814261762, epoch:153
+INFO:root:avg_epoch_loss:0.14440058329357452, epoch:154
+INFO:root:avg_epoch_loss:0.14539335461017164, epoch:155
+INFO:root:avg_epoch_loss:0.14478984587774493, epoch:156
+INFO:root:avg_epoch_loss:0.14296341802281426, epoch:157
+INFO:root:avg_epoch_loss:0.1444707976017368, epoch:158
+INFO:root:avg_epoch_loss:0.14453852088149746, epoch:159
+INFO:root:valid_avg_epoch_loss0.13916927719676872, epoch:159
+INFO:root:best loss is updated to 0.13916927719676872 at 159
+INFO:root:avg_epoch_loss:0.14378056442193907, epoch:160
+INFO:root:avg_epoch_loss:0.1441195572502666, epoch:161
+INFO:root:avg_epoch_loss:0.14457243362917283, epoch:162
+INFO:root:avg_epoch_loss:0.14482691727952343, epoch:163
+INFO:root:avg_epoch_loss:0.14283614648420218, epoch:164
+INFO:root:avg_epoch_loss:0.14376429665278903, epoch:165
+INFO:root:avg_epoch_loss:0.14540545113351006, epoch:166
+INFO:root:avg_epoch_loss:0.14476865660289362, epoch:167
+INFO:root:avg_epoch_loss:0.14538598885538503, epoch:168
+INFO:root:avg_epoch_loss:0.1443205242759936, epoch:169
+INFO:root:avg_epoch_loss:0.14434591661152715, epoch:170
+INFO:root:avg_epoch_loss:0.14503271721832983, epoch:171
+INFO:root:avg_epoch_loss:0.14588149036804457, epoch:172
+INFO:root:avg_epoch_loss:0.1453649383258852, epoch:173
+INFO:root:avg_epoch_loss:0.14413337341665064, epoch:174
+INFO:root:avg_epoch_loss:0.14330803045766194, epoch:175
+INFO:root:avg_epoch_loss:0.14763737386982742, epoch:176
+INFO:root:avg_epoch_loss:0.14217695833620111, epoch:177
+INFO:root:avg_epoch_loss:0.14293103325558756, epoch:178
+INFO:root:avg_epoch_loss:0.1458381896243761, epoch:179
+INFO:root:valid_avg_epoch_loss0.13922369061361026, epoch:179
+INFO:root:avg_epoch_loss:0.14326074421133753, epoch:180
+INFO:root:avg_epoch_loss:0.14283283074303146, epoch:181
+INFO:root:avg_epoch_loss:0.14399827690064515, epoch:182
+INFO:root:avg_epoch_loss:0.1417805875032615, epoch:183
+INFO:root:avg_epoch_loss:0.140881455173648, epoch:184
+INFO:root:avg_epoch_loss:0.14238294420553882, epoch:185
+INFO:root:avg_epoch_loss:0.1440416302977184, epoch:186
+INFO:root:avg_epoch_loss:0.1432362819686675, epoch:187
+INFO:root:avg_epoch_loss:0.14305285226698766, epoch:188
+INFO:root:avg_epoch_loss:0.1459532922724884, epoch:189
+INFO:root:avg_epoch_loss:0.14420530939580964, epoch:190
+INFO:root:avg_epoch_loss:0.14350780748261663, epoch:191
+INFO:root:avg_epoch_loss:0.14437454056222854, epoch:192
+INFO:root:avg_epoch_loss:0.14233935979098894, epoch:193
+INFO:root:avg_epoch_loss:0.13993899097200738, epoch:194
+INFO:root:avg_epoch_loss:0.14240722691016225, epoch:195
+INFO:root:avg_epoch_loss:0.14332387416684328, epoch:196
+INFO:root:avg_epoch_loss:0.14342435388514202, epoch:197
+INFO:root:avg_epoch_loss:0.1409772267718521, epoch:198
+INFO:root:avg_epoch_loss:0.140796615907223, epoch:199
+INFO:root:valid_avg_epoch_loss0.13865872902211174, epoch:199
+INFO:root:best loss is updated to 0.13865872902211174 at 199
+INFO:root:model_name=
+INFO:root:rmse_total=1.179527535421002
+INFO:root:mae_total=0.6192293136251011
+INFO:root:batch_no=1
+INFO:root:rmse_total=1.438226157999549
+INFO:root:mae_total=0.6916727124011273
+INFO:root:batch_no=2
+INFO:root:rmse_total=2.4382660454565337
+INFO:root:mae_total=0.9046334931344697
+INFO:root:batch_no=3
+INFO:root:rmse_total=2.198777153514287
+INFO:root:mae_total=0.8227685715218076
+INFO:root:batch_no=4
+INFO:root:rmse_total=2.0480270144298287
+INFO:root:mae_total=0.8001405790946733
+INFO:root:batch_no=5
+INFO:root:rmse_total=2.1544446526546075
+INFO:root:mae_total=0.8065503062163596
+INFO:root:batch_no=6
+INFO:root:rmse_total=2.042081084713976
+INFO:root:mae_total=0.7775497840517753
+INFO:root:batch_no=7
+INFO:root:rmse_total=1.954310277730491
+INFO:root:mae_total=0.7498357264785578
+INFO:root:batch_no=8
+INFO:root:rmse_total=1.9981713648601316
+INFO:root:mae_total=0.7561924573057186
+INFO:root:batch_no=9
+INFO:root:rmse_total=1.9495478958662538
+INFO:root:mae_total=0.7455454367760246
+INFO:root:batch_no=10
+INFO:root:rmse_total=1.8832200040883487
+INFO:root:mae_total=0.7318349851590681
+INFO:root:batch_no=11
+INFO:root:rmse_total=1.8356705820973753
+INFO:root:mae_total=0.7247048874154389
+INFO:root:batch_no=12
+INFO:root:rmse_total=1.7799789246904385
+INFO:root:mae_total=0.7076091502267776
+INFO:root:batch_no=13
+INFO:root:rmse_total=1.7726929943129395
+INFO:root:mae_total=0.7172992849296977
+INFO:root:batch_no=14
+INFO:root:rmse_total=1.8594749744942725
+INFO:root:mae_total=0.7523357805237262
+INFO:root:batch_no=15
+INFO:root:rmse_total=1.8396324698285802
+INFO:root:mae_total=0.751425477429606
+INFO:root:batch_no=16
+INFO:root:rmse_total=1.8685221687363436
+INFO:root:mae_total=0.7665133419755622
+INFO:root:batch_no=17
+INFO:root:rmse_total=1.979459158550809
+INFO:root:mae_total=0.7948961047595346
+INFO:root:batch_no=18
+INFO:root:rmse_total=1.9527140257455202
+INFO:root:mae_total=0.7908775198188646
+INFO:root:batch_no=19
+INFO:root:rmse_total=1.938655844137266
+INFO:root:mae_total=0.7992884325960498
+INFO:root:batch_no=20
+INFO:root:rmse_total=1.9419555163928914
+INFO:root:mae_total=0.81328351630465
+INFO:root:batch_no=21
+INFO:root:rmse_total=1.9128772458669647
+INFO:root:mae_total=0.8022897482121002
+INFO:root:batch_no=22
+INFO:root:rmse_total=1.9067806749427367
+INFO:root:mae_total=0.8039092654175051
+INFO:root:batch_no=23
+INFO:root:rmse_total=1.8949595339606013
+INFO:root:mae_total=0.8061665993110265
+INFO:root:batch_no=24
+INFO:root:rmse_total=1.8675375408964507
+INFO:root:mae_total=0.7959866074026323
+INFO:root:batch_no=25
+INFO:root:rmse_total=1.8543788971269346
+INFO:root:mae_total=0.7912834250870175
+INFO:root:batch_no=26
+INFO:root:rmse_total=1.94119868289846
+INFO:root:mae_total=0.7988977218399625
+INFO:root:batch_no=27
+INFO:root:rmse_total=1.9213721505022856
+INFO:root:mae_total=0.791507955961716
+INFO:root:batch_no=28
+INFO:root:rmse_total=1.896419808559055
+INFO:root:mae_total=0.7828517686717316
+INFO:root:batch_no=29
+INFO:root:rmse_total=1.8835414011959009
+INFO:root:mae_total=0.7835430542953814
+INFO:root:batch_no=30
+INFO:root:rmse_total=1.9171154599115936
+INFO:root:mae_total=0.7857417934179491
+INFO:root:batch_no=31
+INFO:root:rmse_total=1.9496068346720932
+INFO:root:mae_total=0.7986573213993885
+INFO:root:batch_no=32
+INFO:root:rmse_total=1.9412674884980687
+INFO:root:mae_total=0.8032409188279855
+INFO:root:batch_no=33
+INFO:root:rmse_total=1.9298943145623402
+INFO:root:mae_total=0.8013361586066172
+INFO:root:batch_no=34
+INFO:root:rmse_total=1.9624731899553423
+INFO:root:mae_total=0.8152251902031404
+INFO:root:batch_no=35
+INFO:root:rmse_total=1.9684360735243829
+INFO:root:mae_total=0.8231770397656543
+INFO:root:batch_no=36
+INFO:root:rmse_total=1.9599149023415026
+INFO:root:mae_total=0.8205483467761944
+INFO:root:batch_no=37
+INFO:root:rmse_total=1.9570017370499748
+INFO:root:mae_total=0.8260105972905984
+INFO:root:batch_no=38
+INFO:root:rmse_total=1.9616675187552952
+INFO:root:mae_total=0.8300209133667151
+INFO:root:batch_no=39
+INFO:root:rmse_total=1.944275900949069
+INFO:root:mae_total=0.8245719051197821
+INFO:root:batch_no=40
+INFO:root:rmse_total=1.931363951147852
+INFO:root:mae_total=0.8219498064785689
+INFO:root:batch_no=41
+INFO:root:rmse_total=1.966661480284784
+INFO:root:mae_total=0.8322147864447728
+INFO:root:batch_no=42
+INFO:root:rmse_total=1.947261645518938
+INFO:root:mae_total=0.8252347540244824
+INFO:root:batch_no=43
+INFO:root:rmse_total=1.945709308344387
+INFO:root:mae_total=0.8279550861981699
+INFO:root:batch_no=44
+INFO:root:rmse_total=1.9389099949012223
+INFO:root:mae_total=0.8291824932387794
+INFO:root:batch_no=45
+INFO:root:rmse_total=1.9292683231337102
+INFO:root:mae_total=0.8252310093541617
+INFO:root:batch_no=46
+INFO:root:rmse_total=1.91775293230799
+INFO:root:mae_total=0.8214914622427653
+INFO:root:batch_no=47
+INFO:root:rmse_total=1.9057404060607388
+INFO:root:mae_total=0.8182464704363295
+INFO:root:batch_no=48
+INFO:root:rmse_total=1.8909360815474312
+INFO:root:mae_total=0.8125684122018942
+INFO:root:batch_no=49
+INFO:root:rmse_total=1.8836114553633128
+INFO:root:mae_total=0.8096067757067833
+INFO:root:batch_no=50
+INFO:root:rmse_total=1.8729060422559767
+INFO:root:mae_total=0.8052175744314649
+INFO:root:batch_no=51
+INFO:root:rmse_total=1.8592733492963642
+INFO:root:mae_total=0.8002308585172029
+INFO:root:batch_no=52
+INFO:root:rmse_total=1.854447818515763
+INFO:root:mae_total=0.8009263292433927
+INFO:root:batch_no=53
+INFO:root:rmse_total=1.8586454297919583
+INFO:root:mae_total=0.8059958179628722
+INFO:root:batch_no=54
+INFO:root:rmse_total=1.848683351231394
+INFO:root:mae_total=0.8030819289262096
+INFO:root:batch_no=55
+INFO:root:rmse_total=1.851366246883794
+INFO:root:mae_total=0.8071030652016399
+INFO:root:batch_no=56
+INFO:root:rmse_total=1.853150670649977
+INFO:root:mae_total=0.8112271314550354
+INFO:root:batch_no=57
+INFO:root:rmse_total=1.8476614215943525
+INFO:root:mae_total=0.8100384089294047
+INFO:root:batch_no=58
+INFO:root:rmse_total=1.8452663375033036
+INFO:root:mae_total=0.8111097736806889
+INFO:root:batch_no=59
+INFO:root:rmse_total=1.8488931808348286
+INFO:root:mae_total=0.8159161601607795
+INFO:root:batch_no=60
+INFO:root:rmse_total=1.8409498723950157
+INFO:root:mae_total=0.81354633873608
+INFO:root:batch_no=61
+INFO:root:rmse_total=1.838755083980856
+INFO:root:mae_total=0.814437664812824
+INFO:root:batch_no=62
+INFO:root:rmse_total=1.8490472007867207
+INFO:root:mae_total=0.8189374211357511
+INFO:root:batch_no=63
+INFO:root:rmse_total=1.8486120926872363
+INFO:root:mae_total=0.817775876709475
+INFO:root:batch_no=64
+INFO:root:rmse_total=1.8464465787196982
+INFO:root:mae_total=0.819866788735468
+INFO:root:batch_no=65
+INFO:root:rmse_total=1.86449328561642
+INFO:root:mae_total=0.8262138702560429
+INFO:root:batch_no=66
+INFO:root:rmse_total=1.856476151714051
+INFO:root:mae_total=0.823713482786518
+INFO:root:batch_no=67
+INFO:root:rmse_total=1.8567649028213384
+INFO:root:mae_total=0.8213379355609078
+INFO:root:batch_no=68
+INFO:root:rmse_total=1.8776100322792357
+INFO:root:mae_total=0.8233615138439174
+INFO:root:batch_no=69
+INFO:root:rmse_total=1.8684828505465458
+INFO:root:mae_total=0.8204645541806551
+INFO:root:batch_no=70
+INFO:root:rmse_total=1.8606020844804732
+INFO:root:mae_total=0.8173339547398096
+INFO:root:batch_no=71
+INFO:root:rmse_total=1.8518850934295217
+INFO:root:mae_total=0.8144046169498076
+INFO:root:batch_no=72
+INFO:root:rmse_total=1.8907127222453
+INFO:root:mae_total=0.8178784278389042
+INFO:root:batch_no=73
+INFO:root:rmse_total=1.8943380192409804
+INFO:root:mae_total=0.8204883074629671
+INFO:root:batch_no=74
+INFO:root:rmse_total=1.899066443675857
+INFO:root:mae_total=0.8241645824546378
+INFO:root:batch_no=75
+INFO:root:rmse_total=1.8930697955503102
+INFO:root:mae_total=0.8223585800254001
+INFO:root:batch_no=76
+INFO:root:rmse_total=2.015324333634807
+INFO:root:mae_total=0.8348064374488887
+INFO:root:batch_no=77
+INFO:root:rmse_total=2.0177548854797425
+INFO:root:mae_total=0.8376429037868836
+INFO:root:batch_no=78
+INFO:root:rmse_total=2.0089962757722595
+INFO:root:mae_total=0.8355564435288436
+INFO:root:batch_no=79
+INFO:root:rmse_total=2.0162522977484154
+INFO:root:mae_total=0.8382739583512875
+INFO:root:batch_no=80
+INFO:root:rmse_total=2.0141170892571725
+INFO:root:mae_total=0.840603408035
+INFO:root:batch_no=81
+INFO:root:rmse_total=2.0081025891262705
+INFO:root:mae_total=0.8399245385611991
+INFO:root:batch_no=82
+INFO:root:rmse_total=2.0109411981363645
+INFO:root:mae_total=0.8429890147136924
+INFO:root:batch_no=83
+INFO:root:rmse_total=2.016070943580938
+INFO:root:mae_total=0.8448840567910835
+INFO:root:batch_no=84
+INFO:root:rmse_total=2.02195964881236
+INFO:root:mae_total=0.8447962030996528
+INFO:root:batch_no=85
+INFO:root:rmse_total=2.0265470672435097
+INFO:root:mae_total=0.8465136186900569
+INFO:root:batch_no=86
+INFO:root:rmse_total=2.0257378748328
+INFO:root:mae_total=0.8480660050036126
+INFO:root:batch_no=87
+INFO:root:rmse_total=2.0163992399413013
+INFO:root:mae_total=0.8441928143391368
+INFO:root:batch_no=88
+INFO:root:rmse_total=2.069899906707541
+INFO:root:mae_total=0.8482285051995242
+INFO:root:batch_no=89
+INFO:root:rmse_total=2.0627395773797272
+INFO:root:mae_total=0.8464442314268981
+INFO:root:batch_no=90
+INFO:root:rmse_total=2.0573556579629484
+INFO:root:mae_total=0.8437881027220231
+INFO:root:batch_no=91
+INFO:root:rmse_total=2.0528334832072916
+INFO:root:mae_total=0.8413284261827586
+INFO:root:batch_no=92
+INFO:root:rmse_total=2.056103093978597
+INFO:root:mae_total=0.8418760248247541
+INFO:root:batch_no=93
+INFO:root:rmse_total=2.051045812242021
+INFO:root:mae_total=0.8397583267736805
+INFO:root:batch_no=94
+INFO:root:rmse_total=2.0492379411555324
+INFO:root:mae_total=0.8414653249571273
+INFO:root:batch_no=95
+INFO:root:rmse_total=2.0490974660982717
+INFO:root:mae_total=0.8431459364000258
+INFO:root:batch_no=96
+INFO:root:rmse_total=2.0427109123173515
+INFO:root:mae_total=0.8411695437650726
+INFO:root:batch_no=97
+INFO:root:rmse_total=2.039055231942044
+INFO:root:mae_total=0.841658661313781
+INFO:root:batch_no=98
+INFO:root:rmse_total=2.041491246570424
+INFO:root:mae_total=0.8444729681058164
+INFO:root:batch_no=99
+INFO:root:rmse_total=2.035545919872383
+INFO:root:mae_total=0.8431433713857088
+INFO:root:batch_no=100
+INFO:root:rmse_total=2.0392859211154284
+INFO:root:mae_total=0.8443955970069994
+INFO:root:batch_no=101
+INFO:root:rmse_total=2.0414843389837203
+INFO:root:mae_total=0.8479759277257656
+INFO:root:batch_no=102
+INFO:root:rmse_total=2.0410257967995724
+INFO:root:mae_total=0.8468398095410398
+INFO:root:batch_no=103
+INFO:root:rmse_total=2.042059670050232
+INFO:root:mae_total=0.8478917669040781
+INFO:root:batch_no=104
+INFO:root:rmse_total=2.041792921731584
+INFO:root:mae_total=0.8489165626263746
+INFO:root:batch_no=105
+INFO:root:rmse_total=2.0350750204138235
+INFO:root:mae_total=0.8464618141259667
+INFO:root:batch_no=106
+INFO:root:rmse_total=2.0325036348979677
+INFO:root:mae_total=0.847469350948909
+INFO:root:batch_no=107
+INFO:root:rmse_total=2.027749307109802
+INFO:root:mae_total=0.8479773849128631
+INFO:root:batch_no=108
+INFO:root:rmse_total=2.026491904679311
+INFO:root:mae_total=0.8475095429126613
+INFO:root:batch_no=109
+INFO:root:RMSE=2.026491904679311
+INFO:root:MAE=0.8475095429126613
+INFO:root:CRPS=0.010545101604963603
+INFO:root:std=0.010877273976802826
