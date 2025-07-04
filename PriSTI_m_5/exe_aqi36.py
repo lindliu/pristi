@@ -67,7 +67,14 @@ if __name__ == '__main__':
         is_interpolate=config["model"]["use_guide"], num_workers=args.num_workers,
         target_strategy=args.targetstrategy, mask_sensor=config["model"]["mask_sensor"]
     )
-    model = PriSTI_aqi36(config, args.device, 'pm25').to(args.device)
+    
+    
+    cluster_name = 'pm25'
+    # cluster_name = 'pm25_vae_error'  # 
+    # cluster_name = 'pm25_vae_latent_mean'   
+    # cluster_name = 'pm25_vae_latent_corr' # 
+
+    model = PriSTI_aqi36(config, args.device, cluster_name).to(args.device)
     
     # args.modelfolder = 'pm25_outsample_20250317_164137_new'
     if args.modelfolder == "":

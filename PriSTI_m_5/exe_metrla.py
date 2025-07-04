@@ -44,7 +44,13 @@ def main(args):
         is_interpolate=config["model"]["use_guide"], num_workers=args.num_workers,
         target_strategy=args.targetstrategy,
     )
-    model = PriSTI_MetrLA(config, args.device, 'metrla').to(args.device)
+    
+    
+    cluster_name = 'metrla'
+    # cluster_name = 'metrla_vae_error'  # 
+    # cluster_name = 'metrla_vae_latent_mean'   
+    # cluster_name = 'metrla_vae_latent_corr' # 
+    model = PriSTI_MetrLA(config, args.device, cluster_name).to(args.device)
 
     if args.modelfolder == "":
         train(
