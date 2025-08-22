@@ -78,10 +78,18 @@ if __name__ == '__main__':
     
     # args.modelfolder = 'pm25_outsample_20250317_164137_new'
     if args.modelfolder == "":
+        
+        epoch_start = 0
+        model_continue = "pm25_outsample_20250423_163458_verify_May/tmp_model159.pth"
+        if model_continue != "":
+            model.load_state_dict(torch.load("./save/" + model_continue, map_location=args.device))
+            epoch_start = int(model_continue.split('/')[-1].split('.')[-2][9:])
+            
         train(
             model,
             config["train"],
             train_loader,
+            epoch_start = epoch_start,
             valid_loader=valid_loader,
             foldername=foldername,
         )

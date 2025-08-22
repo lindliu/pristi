@@ -10,6 +10,7 @@ def train(
     model,
     config,
     train_loader,
+    epoch_start = 0,
     valid_loader=None,
     foldername="",
 ):
@@ -24,11 +25,15 @@ def train(
         lr_scheduler = torch.optim.lr_scheduler.MultiStepLR(
             optimizer, milestones=[p1, p2], gamma=0.1
         )
-
+        #####
+        for _ in range(epoch_start):
+            lr_scheduler.step()
+        #####
+        
     valid_epoch_interval = config["valid_epoch_interval"]
     best_valid_loss = 1e10
 
-    for epoch_no in range(config["epochs"]):
+    for epoch_no in range(epoch_start, config["epochs"]):##
         avg_loss = 0
         model.train()
         with tqdm(train_loader, mininterval=5.0, maxinterval=50.0) as it:
